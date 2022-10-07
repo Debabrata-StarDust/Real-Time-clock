@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+	
+</head>
+<body>
+
+	<div class="container">
+		<img src="file:///home/debabratadutta/Desktop/code/5.jpeg">
+
+
+		<h1 id="current-time"></h1>	
+
+		<div class="quotes">
+			<p>Today Quotes </p>
+			<h2>Lost time is never found again. </h2>
+		</div>
+
+
+	</div>
+
+
+	<script>
+		let time= document.getElementById("current-time");
+
+		setInterval(() =>{
+
+			let d =new Date();
+			time.innerHTML =d.toLocaleTimeString();
+
+		},1000)
+		
+
+		
+
+	</script>
+</body>
+</html>
